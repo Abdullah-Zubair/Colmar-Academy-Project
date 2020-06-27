@@ -1,0 +1,585 @@
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(58, 58, 58);
+}
+h2
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* nav-bar */
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 1.5rem;
+}
+
+nav ul 
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+li a
+{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2rem;
+}
+li span
+{
+    font-weight: bold;
+}
+
+header .mobile
+{
+    display: none;
+}
+
+a:hover
+{
+    font-weight: 600;
+}
+
+@media only screen and ( max-width: 720px)
+{
+    header .desktop
+    {
+        display: none;
+    }
+
+    header .mobile
+    {
+        display: block;
+    }
+}
+
+/* section 1 */
+
+.section-1
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: rgba(194, 188, 188, 0.596);
+}
+
+.banner
+{
+    max-width: 60%;
+}
+
+.banner img
+{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text
+{
+    margin-left: 2.5rem;
+    height: auto;
+    width: auto;
+    line-height: 1.2;
+}
+
+.banner-text h1
+{
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.banner-text  p
+{
+    margin: 1.5rem 0;
+    font-size: 2vw;
+}
+
+.banner-text .button
+{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.button:hover
+{
+    background-color: rgb(32, 31, 31);
+}
+
+@media only screen and (max-width: 680px)
+{
+    
+    .banner-text h1
+    {
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+    .banner-text p
+    {
+        margin: 1rem 0;
+        font-size: 2.2vw;
+    }
+    .banner-text .button
+    {
+    
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .section-1
+    {
+        display: block;
+        padding: 0;
+    }
+    .banner
+    {
+        max-width: 100%;
+    }
+    .banner-text
+    {
+        margin: 0;
+        padding: 1rem 2rem;
+        width: auto;
+    }
+    .banner-text h1
+    {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .banner-text p
+    {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* section-2 */
+
+.section-2
+{
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.main-article
+{
+    padding: 2rem 1.5rem;
+    max-width: 60%;
+}
+.main-article img
+{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.main-article h2
+{
+    margin-top: 2rem;
+}
+.main-article p
+{
+    margin: 1.5rem 0;
+}
+.main-article cite
+{
+    font-size: .8rem;
+}
+
+.sub-article-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 40%;
+    border-left: 1px solid rgba(194, 188, 188, 0.322);
+}
+.sub-article
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+}
+.desktop-img
+{
+    width: 35%;
+}
+
+.desktop-img img
+{
+    width: 100%;
+}
+.sub-article .text 
+{
+    width: 65%;
+    margin: 1.5rem;
+}
+.sub-article .text p
+{
+    margin: .5rem 0;
+}
+
+.sub-article.center
+{
+    border-top: 4px solid rgba(194, 188, 188, 0.322);
+}
+.sub-article.last
+{
+    background-color: rgba(194, 188, 188, 0.596);
+}
+
+.mobile-img
+{
+    display: none;
+}
+
+
+
+@media only screen and ( min-width: 481px) and ( max-width: 960px)
+{
+    .sub-article
+    {
+        display: block;
+    }
+    .desktop-img
+    {
+        display: none;
+    }
+    .sub-article.center
+    {
+        display: none;
+    }
+    .mobile-img
+    {
+        display: block;
+        width: 100%;
+    }
+    .mobile-img img
+    {
+
+        width: 100%;
+    }
+    .sub-article .text 
+    {
+        width: auto;
+        margin: 1rem;
+    }
+    .sub-article p{
+        font-size: 14px;
+    }
+    .sub-article h3{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and ( min-width: 481px) and ( max-width: 720px)
+
+{
+    .sub-article.center
+    {
+        display: block;
+    }
+    .sub-article p{
+        display: none;
+    }
+
+    .sub-article .text 
+    {
+        margin: .5rem;
+    }
+
+}
+
+@media only screen and ( max-width: 480px)
+{
+    .sub-article-container
+    {
+        padding: 1rem;
+    }
+    .desktop-img
+    {
+        display: none;
+    }
+    .mobile-img
+    {
+        display: block;
+    }
+    .mobile-img img
+    {
+        width: 100%;
+    }
+
+    .section-2 .main-article
+    {
+        display: none;
+    }
+    .sub-article-container
+    {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: none;
+        
+    }
+    .sub-article
+    {
+        display: block;
+        padding: 0;
+    }
+    .sub-article.center
+    {
+        border-top: none;
+    }
+
+    .sub-article.last
+    {
+        background-color: inherit;
+    }
+    
+}
+
+/* section-3 */
+
+.section-3
+{
+    padding: 2rem 4.5rem;
+    background-color: rgba(194, 188, 188, 0.582);
+}
+
+.section-3 h2
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-3 .courses
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.courses .card
+{
+    width: 30%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.card img
+{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.card .card-text
+{
+    margin: 1rem;
+}
+
+.card-text p:nth-of-type(1)
+{
+    margin: .5rem 0;
+}
+
+.section-3 .mobile
+{
+    display: none;
+}
+
+@media only screen and (max-width: 720px)
+{
+    .section-3 .desktop
+    {
+        display: none;
+    }
+    .section-3 .mobile
+    {
+        display: block;
+    }
+
+    .section-3
+    {
+        padding: 2rem 2rem;
+        border: 1px solid rgba(194, 188, 188, 0.164);
+        background-color: inherit;
+    }
+    .section-3 h2
+    {
+        margin-bottom: 1rem;
+    }
+
+    .mobile .courses-list
+    {
+        display: block;
+        border: none;
+        padding: 1rem;
+        margin-bottom: .5rem;
+        width: 100%;
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: inherit;
+        background-color: rgba(194, 188, 188, 0.582);
+    }
+
+    .courses-list:hover
+    {
+        background-color: rgba(194, 188, 188, 0.966);
+    }
+}
+
+/* section-4 */
+
+.section-4
+{
+    padding: 2rem 0 2rem 1.5rem;
+}
+.section-4 h2
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container 
+{
+    width: 100%;
+    display: inline-flex;
+}
+.container .main-section
+{
+    width: 60%;
+}
+.container .sub-section
+{
+    width: 40%;
+    margin: 0 0 0 2rem;
+}
+
+.main-section video
+{
+    width: 100%;
+}
+.main-section .content
+{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.content h3
+{
+    margin-bottom: .5rem;
+}
+
+.sub-section .artical
+{
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    padding: 1rem;
+}
+.artical .artical-img
+{
+    width: 35%;
+}
+.artical-img img
+{
+    width: 100%;
+    height: auto;
+}
+.artical .artical-text
+{
+    width: 65%;
+    margin-left: 1rem;
+}
+.artical-text p 
+{
+    margin-top: 1rem;
+}
+
+.sub-section .artical-1
+{
+    background-color: rgba(194, 188, 188, 0.596);
+}
+@media only screen and (max-width: 980px)
+{
+    .artical .artical-text h3
+    {
+        font-size: 1rem;
+    }
+    .artical .artical-text p 
+    {
+        margin-top: .5rem;
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 720px)
+{
+    .section-4
+    {
+        padding: 2rem 0 1.5rem;
+    }
+    .main-section .content
+    {
+        display: none;
+    }
+    .container .sub-section
+    {
+        display: none;
+    }
+    .container .main-section
+    {
+        width: 100%;
+    }
+}
+
+/* footer */
+
+footer
+{
+    border-top: 1px solid rgba(194, 188, 188, 0.596);
+    padding: 1rem 2rem 2rem;
+}
+.footer-content
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.footer-content p
+{
+    font-size: .8rem;
+}
+.footer-content p:nth-of-type(2)
+{
+    word-spacing: 1rem;
+}
+
+@media only screen and (max-width:720px)
+{
+    footer
+    {
+        border-top: none;
+        padding: 1rem;
+    }
+}
+
